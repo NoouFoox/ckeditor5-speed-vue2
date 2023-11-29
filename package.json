@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-speed-vue2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./lib/speed-edit.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
