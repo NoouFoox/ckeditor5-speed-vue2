@@ -15,7 +15,7 @@ export default {
       type: String,
       default: "",
     },
-    editConfig: {
+    config: {
       type: Object,
       default: () => {},
     },
@@ -34,7 +34,7 @@ export default {
   mounted() {
     this.editor = EditSpeed.create(
       document.querySelector("._editor5-speed"),
-      Object.assign(this.defaultEditConfig, this.editor)
+      Object.assign(this.defaultEditConfig, this.config)
     )
       .then((editor) => {
         this.$emit("then", editor);
